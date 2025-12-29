@@ -16,6 +16,9 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 
 ## 📸 Preview
 
+![Status Line Preview](images/statusline-preview.png)
+
+**Example output:**
 ```
 📁 myproject │ ⎇ main*↑3 │ ◉ 45% (450K) │ ⏱ 1h30m │ +320/-145 │ $0.450
 ```
