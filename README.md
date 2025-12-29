@@ -32,7 +32,7 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 /plugin marketplace add deepan-g2/claude-statusline-plugin
 
 # Install the plugin
-/plugin install enhanced-statusline@deepan-g2/claude-statusline-plugin
+/plugin install enhanced-statusline@deepan-statusline-plugins
 ```
 
 ### Local Development
