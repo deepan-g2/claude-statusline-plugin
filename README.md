@@ -1,5 +1,12 @@
 # Enhanced Status Line Plugin for Claude Code
 
+[![GitHub stars](https://img.shields.io/github/stars/deepan-g2/claude-statusline-plugin?style=social)](https://github.com/deepan-g2/claude-statusline-plugin/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/deepan-g2/claude-statusline-plugin?style=social)](https://github.com/deepan-g2/claude-statusline-plugin/network/members)
+[![GitHub watchers](https://img.shields.io/github/watchers/deepan-g2/claude-statusline-plugin?style=social)](https://github.com/deepan-g2/claude-statusline-plugin/watchers)
+[![Visitor Count](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdeepan-g2%2Fclaude-statusline-plugin&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false)](https://hits.seeyoufarm.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Version](https://img.shields.io/github/v/release/deepan-g2/claude-statusline-plugin)](https://github.com/deepan-g2/claude-statusline-plugin/releases)
+
 A beautiful, informative status line for Claude Code that displays real-time session metrics, git status, token usage, and more.
 
 ## 🎨 Features
