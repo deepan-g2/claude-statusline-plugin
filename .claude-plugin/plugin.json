@@ -1,0 +1,11 @@
+{
+  "name": "enhanced-statusline",
+  "version": "1.0.0",
+  "description": "Enhanced status line for Claude Code with session duration, token tracking, git status, and cost monitoring",
+  "author": {
+    "name": "Claude Code Community"
+  },
+  "keywords": ["statusline", "theme", "customization", "git", "monitoring"],
+  "license": "MIT",
+  "repository": "https://github.com/yourusername/claude-statusline-plugin"
+}
