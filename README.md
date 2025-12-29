@@ -26,17 +26,17 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 
 ```bash
 # Add the plugin marketplace
-/plugin marketplace add yourusername/claude-statusline-plugin
+/plugin marketplace add deepan-g2/claude-statusline-plugin
 
 # Install the plugin
-/plugin install enhanced-statusline@yourusername/claude-statusline-plugin
+/plugin install enhanced-statusline@deepan-g2/claude-statusline-plugin
 ```
 
 ### Local Development
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/claude-statusline-plugin.git
+git clone https://github.com/deepan-g2/claude-statusline-plugin.git
 cd claude-statusline-plugin
 
 # Test locally
@@ -190,13 +190,13 @@ MIT License - feel free to use and modify!
 
 ## 🌟 Credits
 
-Created by the Claude Code community. Inspired by Oh-My-Zsh themes and Starship prompt.
+Created by Deepan Kumar ([@deepan-g2](https://github.com/deepan-g2)). Inspired by Oh-My-Zsh themes and Starship prompt.
 
 ## 📮 Support
 
-- Report issues: [GitHub Issues](https://github.com/yourusername/claude-statusline-plugin/issues)
-- Discussions: [GitHub Discussions](https://github.com/yourusername/claude-statusline-plugin/discussions)
-- Documentation: [Wiki](https://github.com/yourusername/claude-statusline-plugin/wiki)
+- Report issues: [GitHub Issues](https://github.com/deepan-g2/claude-statusline-plugin/issues)
+- Discussions: [GitHub Discussions](https://github.com/deepan-g2/claude-statusline-plugin/discussions)
+- Documentation: [Wiki](https://github.com/deepan-g2/claude-statusline-plugin/wiki)
 
 ---
 
