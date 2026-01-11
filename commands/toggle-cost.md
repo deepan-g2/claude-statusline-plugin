@@ -4,10 +4,12 @@ description: Toggle cost monitoring display in status line
 
 # Toggle Cost Display
 
-Enable or disable the real-time cost monitoring in your status line.
+IMMEDIATELY run this command:
 
-When enabled, shows:
-- 💰 Current session cost (e.g., $0.450)
-- Only displays when cost > $0.01
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/toggle-feature.sh toggle cost
+```
 
-Let me toggle the cost display for you and show the current configuration.
+This will enable/disable cost tracking (💰 $0.450).
+
+Tell user to restart Claude session to see changes.

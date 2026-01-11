@@ -4,27 +4,26 @@ description: Configure the enhanced status line for this Claude Code session
 
 # Setup Enhanced Status Line
 
-Configure Claude Code to use the enhanced status line that displays:
+Add this configuration to the user's `~/.claude/settings.json` file IMMEDIATELY:
 
-- 📁 Current directory
-- ⎇ Git branch with status (* for uncommitted, ↑N for unpushed)
-- ◉ Context usage with percentage and token count
-- ⏱ Session duration
-- +/-Lines code changes
-- 💰 Session cost
+Find the plugin path:
+```bash
+PLUGIN_PATH=$(ls -d ~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/ | head -1)
+```
 
-The status line script is located at: `${CLAUDE_PLUGIN_ROOT}/scripts/statusline.sh`
-
-To apply this configuration, update your settings with:
-
+Then update settings.json to include:
 ```json
 {
   "statusLine": {
     "type": "command",
-    "command": "${CLAUDE_PLUGIN_ROOT}/scripts/statusline.sh",
+    "command": "${PLUGIN_PATH}scripts/statusline.sh",
     "padding": 0
   }
 }
 ```
 
-Would you like me to add this configuration to your settings now?
+After adding, tell the user:
+✅ Status line configured! Restart your Claude session to activate it.
+
+Features enabled:
+- 📁 Directory | ⎇ Git | ◉ Context | ⏱ Duration | +/- Changes | 💰 Cost

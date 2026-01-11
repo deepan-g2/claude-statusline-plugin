@@ -4,22 +4,25 @@ description: Switch between status line color themes
 
 # Switch Status Line Theme
 
-Change your status line color theme instantly!
+IMMEDIATELY run these bash commands:
 
-## Available Themes:
+1. First, show available themes:
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/apply-theme.sh list
+```
 
-I'll show you all 10 available themes with previews and help you switch to your preferred one.
+2. Show current theme:
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/apply-theme.sh current
+```
 
-**Themes:**
-1. **default** - Original vibrant cyberpunk theme (pink/cyan)
-2. **dracula** - Dark purple and pink tones
-3. **nord** - Cool arctic blue theme
-4. **cyberpunk** - Ultra-bright neon colors
-5. **solarized-dark** - Popular Solarized dark palette
-6. **gruvbox** - Retro warm colors
-7. **ocean** - Cool ocean-inspired blues
-8. **sunset** - Warm sunset oranges
-9. **monochrome** - Professional grayscale
-10. **matrix** - Classic green terminal
+3. Ask user which theme they want to apply from: default, dracula, nord, cyberpunk, solarized-dark, gruvbox, ocean, sunset, monochrome, matrix
 
-Which theme would you like to apply?
+4. Apply the chosen theme:
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/apply-theme.sh apply THEME_NAME
+```
+
+5. Tell user to restart Claude session to see the new theme.
+
+DO NOT overthink this. Just run the commands and show the output.

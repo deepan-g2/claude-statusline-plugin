@@ -4,11 +4,17 @@ description: Toggle git branch and status display in status line
 
 # Toggle Git Display
 
-Enable or disable the git branch and status indicators in your status line.
+IMMEDIATELY run this command:
 
-When enabled, shows:
-- ⎇ Branch name
-- * Uncommitted changes indicator
-- ↑N Unpushed commits counter
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/toggle-feature.sh toggle git
+```
 
-Let me toggle the git display for you and show the current configuration.
+This will enable/disable git branch indicators (⎇ branch*, ↑N).
+
+Then show current config:
+```bash
+~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/toggle-feature.sh show
+```
+
+Tell user to restart Claude session to see changes.
