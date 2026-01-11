@@ -151,30 +151,40 @@ done
 
 ## 📚 Available Commands
 
-### Setup & Configuration
+### 🚀 Method 1: Direct CLI (Fastest - Recommended!)
+
+Use the included CLI tool **outside of Claude** for instant results:
+
+```bash
+# Create an alias (add to ~/.zshrc or ~/.bashrc)
+alias statusline-cli='~/.claude/plugins/cache/deepan-statusline-plugins/enhanced-statusline/*/scripts/statusline-cli.sh'
+
+# Then use it:
+statusline-cli themes list          # List all themes
+statusline-cli themes apply dracula # Apply Dracula theme
+statusline-cli toggle git           # Toggle git display
+statusline-cli config show          # Show current config
+```
+
+**Why use this?** Instant execution, no Claude overhead, no autocomplete errors!
+
+### 🐌 Method 2: Plugin Commands (Inside Claude)
+
+If you prefer to use commands inside Claude Code:
+
+**Setup & Configuration:**
 - `/enhanced-statusline:setup-statusline` - Initial status line configuration
 - `/enhanced-statusline:show-config` - View current theme and settings
 
-### Theme Management
+**Theme Management:**
 - `/enhanced-statusline:theme` - Switch between 10 pre-built themes
-- `/enhanced-statusline:color-scheme` - View and select color themes
 
-### Feature Toggles
+**Feature Toggles:**
 - `/enhanced-statusline:toggle-git` - Show/hide git branch and status
 - `/enhanced-statusline:toggle-cost` - Show/hide cost monitoring
 - `/enhanced-statusline:toggle-duration` - Show/hide session duration
 
-### Quick Examples
-```bash
-# Switch to Dracula theme
-/enhanced-statusline:theme
-
-# Hide cost if you don't want to see it
-/enhanced-statusline:toggle-cost
-
-# View your current configuration
-/enhanced-statusline:show-config
-```
+**Note:** Plugin commands may be slower as they go through Claude's command parser.
 
 ## 🔧 Requirements
 
