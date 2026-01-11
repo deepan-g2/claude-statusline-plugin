@@ -1,0 +1,132 @@
+{
+  "default": {
+    "name": "Default (Cyberpunk)",
+    "description": "Original vibrant theme with pink and cyan",
+    "colors": {
+      "cyan": 87,
+      "green": 46,
+      "yellow": 228,
+      "orange": 214,
+      "purple": 141,
+      "blue": 117,
+      "gray": 245
+    }
+  },
+  "dracula": {
+    "name": "Dracula",
+    "description": "Dark theme with purple and pink tones",
+    "colors": {
+      "cyan": 117,
+      "green": 84,
+      "yellow": 228,
+      "orange": 215,
+      "purple": 141,
+      "blue": 141,
+      "gray": 248
+    }
+  },
+  "nord": {
+    "name": "Nord",
+    "description": "Cool blue arctic theme",
+    "colors": {
+      "cyan": 109,
+      "green": 108,
+      "yellow": 143,
+      "orange": 167,
+      "purple": 109,
+      "blue": 111,
+      "gray": 246
+    }
+  },
+  "cyberpunk": {
+    "name": "Cyberpunk Neon",
+    "description": "Bright neon colors for high visibility",
+    "colors": {
+      "cyan": 51,
+      "green": 46,
+      "yellow": 226,
+      "orange": 202,
+      "purple": 201,
+      "blue": 45,
+      "gray": 250
+    }
+  },
+  "solarized-dark": {
+    "name": "Solarized Dark",
+    "description": "Popular Solarized dark theme",
+    "colors": {
+      "cyan": 37,
+      "green": 64,
+      "yellow": 136,
+      "orange": 166,
+      "purple": 61,
+      "blue": 33,
+      "gray": 240
+    }
+  },
+  "gruvbox": {
+    "name": "Gruvbox",
+    "description": "Retro warm color scheme",
+    "colors": {
+      "cyan": 109,
+      "green": 142,
+      "yellow": 214,
+      "orange": 208,
+      "purple": 175,
+      "blue": 109,
+      "gray": 245
+    }
+  },
+  "ocean": {
+    "name": "Ocean Blue",
+    "description": "Cool ocean-inspired theme",
+    "colors": {
+      "cyan": 81,
+      "green": 48,
+      "yellow": 117,
+      "orange": 116,
+      "purple": 69,
+      "blue": 75,
+      "gray": 245
+    }
+  },
+  "sunset": {
+    "name": "Sunset Warm",
+    "description": "Warm sunset colors",
+    "colors": {
+      "cyan": 180,
+      "green": 149,
+      "yellow": 222,
+      "orange": 208,
+      "purple": 168,
+      "blue": 174,
+      "gray": 248
+    }
+  },
+  "monochrome": {
+    "name": "Monochrome",
+    "description": "Grayscale professional theme",
+    "colors": {
+      "cyan": 250,
+      "green": 246,
+      "yellow": 248,
+      "orange": 242,
+      "purple": 238,
+      "blue": 252,
+      "gray": 244
+    }
+  },
+  "matrix": {
+    "name": "Matrix Green",
+    "description": "Classic green terminal theme",
+    "colors": {
+      "cyan": 46,
+      "green": 40,
+      "yellow": 34,
+      "orange": 28,
+      "purple": 22,
+      "blue": 46,
+      "gray": 240
+    }
+  }
+}

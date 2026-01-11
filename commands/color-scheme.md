@@ -4,39 +4,31 @@ description: Change the color scheme of the enhanced status line
 
 # Change Status Line Color Scheme
 
-Select from predefined color schemes or create your own custom colors.
+Select from predefined color schemes for your status line.
 
 ## Available Themes:
 
-### 1. Default (Cyberpunk)
-- Pink model indicator
-- Cyan directory
-- Green/Yellow/Orange context indicators
+Let me show you all available themes and help you switch to your preferred one.
 
-### 2. Dracula
-- Purple and blue tones
-- Soft contrast
+I'll list all available themes with their descriptions and apply the one you choose.
 
-### 3. Ocean Blue
-- Cool blue palette
-- Aqua accents
+## Current Theme
 
-### 4. Sunset Warm
-- Warm oranges and corals
-- Earth tones
+Let me check which theme you're currently using.
 
-### 5. Monochrome
-- Grayscale only
-- Professional look
+## Switch Theme
 
-## How to Apply:
+Which theme would you like to use?
 
-The color scheme is defined in the status line script at:
-`${CLAUDE_PLUGIN_ROOT}/scripts/statusline.sh`
+1. **default** - Original cyberpunk theme with vibrant pink and cyan
+2. **dracula** - Dark theme with purple and pink tones
+3. **nord** - Cool blue arctic theme
+4. **cyberpunk** - Bright neon colors for high visibility
+5. **solarized-dark** - Popular Solarized dark theme
+6. **gruvbox** - Retro warm color scheme
+7. **ocean** - Cool ocean-inspired theme
+8. **sunset** - Warm sunset colors
+9. **monochrome** - Grayscale professional theme
+10. **matrix** - Classic green terminal theme
 
-You can edit lines 86-96 to change colors. Use color codes 0-255.
-
-Would you like me to:
-1. Show you all 256 available terminal colors?
-2. Apply a specific theme?
-3. Help you create a custom color scheme?
+Once you choose, I'll apply the theme and update your configuration.

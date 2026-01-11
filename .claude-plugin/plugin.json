@@ -1,7 +1,7 @@
 {
   "name": "enhanced-statusline",
-  "version": "1.0.0",
-  "description": "Enhanced status line for Claude Code with session duration, token tracking, git status, and cost monitoring",
+  "version": "1.2.0",
+  "description": "Enhanced status line for Claude Code with 10 themes, feature toggles, session metrics, git status, cache tracking, and cost monitoring",
   "author": {
     "name": "Deepan Kumar",
     "email": "deepan.ppgit@gmail.com",

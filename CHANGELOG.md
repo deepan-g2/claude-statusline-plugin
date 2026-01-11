@@ -2,6 +2,43 @@
 
 All notable changes to the Enhanced Status Line Plugin will be documented in this file.
 
+## [1.2.0] - 2026-01-11
+
+### Added
+- **10 Pre-built Themes** - Switch themes instantly with `/enhanced-statusline:theme`
+  - Default (Cyberpunk) - Original vibrant theme
+  - Dracula - Dark purple and pink tones
+  - Nord - Cool arctic blue theme
+  - Cyberpunk - Ultra-bright neon colors
+  - Solarized Dark - Popular Solarized palette
+  - Gruvbox - Retro warm colors
+  - Ocean - Cool ocean-inspired blues
+  - Sunset - Warm sunset oranges
+  - Monochrome - Professional grayscale
+  - Matrix - Classic green terminal
+- **Feature Toggle System** - Enable/disable individual components
+  - `/enhanced-statusline:toggle-git` - Show/hide git info
+  - `/enhanced-statusline:toggle-cost` - Show/hide cost
+  - `/enhanced-statusline:toggle-duration` - Show/hide duration
+- **New Metrics**
+  - ⚡ API/Tool call counter - Track number of API requests
+  - 📦 Cache hit ratio - Monitor prompt caching efficiency (optional)
+- **Configuration Management**
+  - `/enhanced-statusline:show-config` - View current settings
+  - Persistent configuration in `~/.claude/enhanced-statusline-config.json`
+  - Per-user theme and feature preferences
+
+### Changed
+- Status line now loads colors dynamically from theme configuration
+- Improved performance with better jq usage
+- Enhanced error handling with fallback values
+
+### Technical
+- Added `scripts/themes.json` - Theme definition file
+- Added `scripts/apply-theme.sh` - Theme manager script
+- Added `scripts/toggle-feature.sh` - Feature toggle manager
+- Updated `scripts/statusline.sh` to support dynamic theming
+
 ## [1.0.0] - 2025-12-29
 
 ### Added

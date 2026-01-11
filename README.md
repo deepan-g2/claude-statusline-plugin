@@ -11,7 +11,8 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 
 ## 🎨 Features
 
-- **📁 Directory Display** - Current working directory
+### Core Metrics
+- **📁 Directory Display** - Current working directory (always shown)
 - **⎇ Git Integration** - Branch name, uncommitted changes (*), unpushed commits (↑N)
 - **◉ Smart Context Tracking** - Percentage + actual token count with color coding
   - Green (< 60%) - All good
@@ -20,6 +21,14 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 - **⏱ Session Duration** - Track how long you've been working
 - **+/- Code Changes** - Lines added and removed in session
 - **💰 Cost Monitoring** - Real-time cost tracking
+- **⚡ API Call Counter** - Number of API requests in session (NEW in v1.2.0)
+- **📦 Cache Hit Ratio** - Prompt caching efficiency (NEW in v1.2.0, optional)
+
+### Customization
+- **10 Pre-built Themes** - Dracula, Nord, Cyberpunk, Solarized, Gruvbox, Ocean, Sunset, Monochrome, Matrix
+- **Feature Toggles** - Show/hide any component
+- **256 Color Support** - Full terminal color customization
+- **Persistent Config** - Your preferences saved across sessions
 
 ## 📸 Preview
 
@@ -27,8 +36,12 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 
 **Example output:**
 ```
-📁 myproject │ ⎇ main*↑3 │ ◉ 45% (450K) │ ⏱ 1h30m │ +320/-145 │ $0.450
+📁 myproject │ ⎇ main*↑3 │ ◉ 45% (450K) │ ⏱ 1h30m │ +320/-145 │ $0.450 │ ⚡25 │ 📦85%
 ```
+
+**With cache tracking enabled:**
+- ⚡25 = 25 API calls
+- 📦85% = 85% cache hit rate (green = good caching!)
 
 ## 📦 Installation
 
@@ -118,8 +131,30 @@ done
 
 ## 📚 Available Commands
 
-- `/enhanced-statusline:setup-statusline` - Configure the status line
-- `/enhanced-statusline:color-scheme` - Change color themes
+### Setup & Configuration
+- `/enhanced-statusline:setup-statusline` - Initial status line configuration
+- `/enhanced-statusline:show-config` - View current theme and settings
+
+### Theme Management
+- `/enhanced-statusline:theme` - Switch between 10 pre-built themes
+- `/enhanced-statusline:color-scheme` - View and select color themes
+
+### Feature Toggles
+- `/enhanced-statusline:toggle-git` - Show/hide git branch and status
+- `/enhanced-statusline:toggle-cost` - Show/hide cost monitoring
+- `/enhanced-statusline:toggle-duration` - Show/hide session duration
+
+### Quick Examples
+```bash
+# Switch to Dracula theme
+/enhanced-statusline:theme
+
+# Hide cost if you don't want to see it
+/enhanced-statusline:toggle-cost
+
+# View your current configuration
+/enhanced-statusline:show-config
+```
 
 ## 🔧 Requirements
 
