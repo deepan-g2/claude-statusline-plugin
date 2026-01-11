@@ -55,6 +55,26 @@ A beautiful, informative status line for Claude Code that displays real-time ses
 /plugin install enhanced-statusline@deepan-statusline-plugins
 ```
 
+### 🔄 Updating to Latest Version
+
+If you already have the plugin installed, update to get new features:
+
+```bash
+# Update to latest version
+claude plugin update enhanced-statusline@deepan-statusline-plugins
+```
+
+Or enable auto-updates (inside Claude Code):
+```bash
+/plugin
+# Go to: Marketplaces → deepan-statusline-plugins → Enable auto-update
+```
+
+**Current Version:** v1.2.0 (Released: 2026-01-11)
+**Previous Version:** v1.0.0
+
+See [CHANGELOG.md](CHANGELOG.md) for all version changes.
+
 ### Local Development
 
 ```bash
