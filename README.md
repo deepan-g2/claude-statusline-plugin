@@ -220,6 +220,34 @@ apt-get install jq bc
 
 ## 🛠 Troubleshooting
 
+### Update Not Working?
+
+If `claude plugin update` doesn't show the latest version:
+
+```bash
+# Option 1: Uninstall and reinstall (Recommended)
+claude plugin uninstall enhanced-statusline
+claude plugin install enhanced-statusline@deepan-statusline-plugins
+
+# Option 2: Force marketplace refresh
+/plugin marketplace remove deepan-statusline-plugins
+/plugin marketplace add deepan-g2/claude-statusline-plugin
+claude plugin install enhanced-statusline@deepan-statusline-plugins
+
+# Option 3: Clear cache (if above don't work)
+# Exit Claude, then:
+rm -rf ~/.claude/plugins/cache/deepan-statusline-plugins
+# Restart Claude and reinstall
+claude plugin install enhanced-statusline@deepan-statusline-plugins
+```
+
+### New Commands Not Showing?
+
+After updating to v1.2.0, if new commands aren't available:
+- **Restart Claude Code completely** (exit and start new session)
+- Verify you're on v1.2.0: Check `~/.claude/plugins/installed_plugins.json`
+- The new commands should appear: `/enhanced-statusline:theme`, `/enhanced-statusline:toggle-git`, etc.
+
 ### Colors not showing?
 ```bash
 # Check terminal color support
@@ -236,8 +264,14 @@ apt-get install jq  # Linux
 
 ### Status line not updating?
 - Restart Claude Code session
-- Check script permissions: `chmod +x scripts/statusline.sh`
-- Test manually: `echo '{}' | ./scripts/statusline.sh`
+- Check script permissions: `chmod +x ~/.claude/plugins/cache/*/enhanced-statusline/*/scripts/statusline.sh`
+- Test manually: `echo '{}' | ~/.claude/statusline.sh`
+
+### Theme Command Error?
+If you get an error running `/enhanced-statusline:theme`:
+- Make sure you're on v1.2.0 (see "Update Not Working" above)
+- Check that `scripts/themes.json` exists in your plugin directory
+- Try running setup again: `/enhanced-statusline:setup-statusline`
 
 ## 🤝 Contributing
 
